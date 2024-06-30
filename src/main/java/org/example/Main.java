@@ -12,7 +12,7 @@ public class Main {
     private static final Logger logger = LoggerFactory.getLogger(CrptApi.class);
 
     public static void main(String[] args) {
-        CrptApi crptApi = new CrptApi(TimeUnit.SECONDS, 10);
+        CrptApi crptApi = new CrptApi(TimeUnit.SECONDS, 50);
         List<CrptApi.Product> products = defineSampleProducts();
         CrptApi.ProductRegistration productRegistration = CrptApi.createProductRegistration("string",
                 "string", "string", "LP_INTRODUCE_GOODS", true, "string",
